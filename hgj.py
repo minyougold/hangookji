@@ -202,7 +202,7 @@ class StartRegionScreen(Screen):
         
         # 플레이어 이름 입력
         self.name_input = TextInput(
-            text="플레이어이름입력",
+            text="주인공",
             multiline=False,
             font_name="batang",
             size_hint=(1, 0.1)
@@ -279,6 +279,7 @@ class GameScreen(Screen):
         # (5) 저장 / 턴 종료
         self.save_btn = Button(text="저장", font_name="batang", size_hint=(1, 1))
         self.next_turn_btn = Button(text="턴 종료", font_name="batang", size_hint=(1, 1))
+        self.exit_btn = Button(text="종료", font_name="batang", size_hint=(1, 1))
         
         # 버튼 이벤트 바인딩
         self.invest_agri_btn.bind(on_release=self.invest_agri_action)
@@ -288,7 +289,8 @@ class GameScreen(Screen):
         self.attack_btn.bind(on_release=self.attack_action)
         self.save_btn.bind(on_release=self.save_game)
         self.next_turn_btn.bind(on_release=self.next_turn)
-        
+        self.exit_btn.bind(on_release=self.exit_game)
+
         # 버튼들을 레이아웃에 배치
         button_layout.add_widget(self.select_region_btn)
         button_layout.add_widget(self.invest_agri_btn)
@@ -298,7 +300,7 @@ class GameScreen(Screen):
         button_layout.add_widget(self.attack_btn)
         button_layout.add_widget(self.save_btn)
         button_layout.add_widget(self.next_turn_btn)
-        
+        button_layout.add_widget(self.exit_btn)
         self.layout.add_widget(button_layout)
         
         # 스크롤뷰 + GridLayout (지역 정보 표시)
@@ -310,6 +312,9 @@ class GameScreen(Screen):
         self.layout.add_widget(self.scroll_view)
         self.add_widget(self.layout)
     
+    def exit_game(self, instance):
+        App.get_running_app().stop()
+
     def on_pre_enter(self, *args):
         """화면 들어올 때 초기화 작업 (한 번만)"""
         if not self.regions:
@@ -554,7 +559,7 @@ class GameScreen(Screen):
         for r_obj in self.regions.values():
             r_obj.next_turn()
         
-        # 2) 간단한 AI 로직
+        # 2) AI 로직
         for r_obj in self.regions.values():
             if r_obj.owner == self.player_name:
                 continue
