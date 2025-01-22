@@ -1,0 +1,146 @@
+{
+  "player_name": "플레이어이름입력",
+  "player_region_name": "평안북도",
+  "regions": {
+    "평안북도": {
+      "owner": "플레이어이름입력",
+      "gold": 107,
+      "food": 5002,
+      "population": 2248,
+      "agri": 7,
+      "commerce": 6,
+      "security": 10,
+      "army": 290
+    },
+    "평안남도": {
+      "owner": "플레이어이름입력",
+      "gold": 1400,
+      "food": 4049,
+      "population": 1370,
+      "agri": 0,
+      "commerce": 0,
+      "security": 0,
+      "army": 0
+    },
+    "함경북도": {
+      "owner": "플레이어이름입력",
+      "gold": 1400,
+      "food": 4034,
+      "population": 1367,
+      "agri": 0,
+      "commerce": 0,
+      "security": 0,
+      "army": 0
+    },
+    "함경남도": {
+      "owner": "김민유",
+      "gold": 1400,
+      "food": 4014,
+      "population": 1363,
+      "agri": 0,
+      "commerce": 0,
+      "security": 0,
+      "army": 37
+    },
+    "황해도": {
+      "owner": "김유정",
+      "gold": 1400,
+      "food": 3983,
+      "population": 1357,
+      "agri": 0,
+      "commerce": 0,
+      "security": 0,
+      "army": 43
+    },
+    "강원도": {
+      "owner": "이병호",
+      "gold": 1400,
+      "food": 4047,
+      "population": 1370,
+      "agri": 0,
+      "commerce": 0,
+      "security": 0,
+      "army": 30
+    },
+    "경기도": {
+      "owner": "신문주",
+      "gold": 1400,
+      "food": 3992,
+      "population": 1359,
+      "agri": 0,
+      "commerce": 0,
+      "security": 0,
+      "army": 41
+    },
+    "경상남도": {
+      "owner": "김경남",
+      "gold": 1400,
+      "food": 3931,
+      "population": 1347,
+      "agri": 0,
+      "commerce": 0,
+      "security": 0,
+      "army": 53
+    },
+    "경상북도": {
+      "owner": "김민주",
+      "gold": 1400,
+      "food": 3909,
+      "population": 1343,
+      "agri": 0,
+      "commerce": 0,
+      "security": 0,
+      "army": 57
+    },
+    "전라남도": {
+      "owner": "김권성",
+      "gold": 1400,
+      "food": 4027,
+      "population": 1366,
+      "agri": 0,
+      "commerce": 0,
+      "security": 0,
+      "army": 34
+    },
+    "전라북도": {
+      "owner": "김민주",
+      "gold": 1400,
+      "food": 4058,
+      "population": 1372,
+      "agri": 0,
+      "commerce": 0,
+      "security": 0,
+      "army": 28
+    },
+    "충청북도": {
+      "owner": "김권성",
+      "gold": 1400,
+      "food": 4024,
+      "population": 1365,
+      "agri": 0,
+      "commerce": 0,
+      "security": 0,
+      "army": 35
+    },
+    "충청남도": {
+      "owner": "김혜정",
+      "gold": 1400,
+      "food": 4109,
+      "population": 1382,
+      "agri": 0,
+      "commerce": 0,
+      "security": 0,
+      "army": 18
+    },
+    "제주도": {
+      "owner": "김혜정",
+      "gold": 1400,
+      "food": 4043,
+      "population": 1369,
+      "agri": 0,
+      "commerce": 0,
+      "security": 0,
+      "army": 31
+    }
+  }
+}
